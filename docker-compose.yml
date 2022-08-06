@@ -6,8 +6,8 @@ services:
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     restart: always
     volumes:
-      #- /srv/db/nextcloud:/var/lib/mysql
-      - db:/var/lib/mysql
+      - /srv/db/nextcloud:/var/lib/mysql
+      #- db:/var/lib/mysql
     environment:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
     env_file:
