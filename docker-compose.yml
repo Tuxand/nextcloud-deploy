@@ -7,7 +7,6 @@ services:
     restart: always
     volumes:
       - /srv/db/nextcloud:/var/lib/mysql
-      #- db:/var/lib/mysql
     environment:
       - MYSQL_RANDOM_ROOT_PASSWORD=yes
     env_file:
@@ -36,7 +35,6 @@ services:
     restart: always
     ports:
       - 10.137.137.2:80:80
-      #- 80:80
     volumes:
       - nextcloud:/var/www/html:ro
     depends_on:
