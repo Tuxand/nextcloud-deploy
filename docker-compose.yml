@@ -41,7 +41,6 @@ services:
       - app
 
   cron:
-    container_name: cron
     build: ./app
     restart: always
     volumes:
