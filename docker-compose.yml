@@ -52,5 +52,4 @@ services:
 
 volumes:
   nextcloud:
-  html:
   db:
